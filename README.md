@@ -1,68 +1,79 @@
-# webpack 4.X ¿ª·¢»·¾³ÅäÖÃ²½Öè
+# webpack 4.X å¼€å‘ç¯å¢ƒé…ç½®æ­¥éª¤
 
 
 
-## Ò»£¬»·¾³ÅäÖÃ
+## ä¸€ï¼Œç¯å¢ƒé…ç½®
 
-1£¬´´½¨¹¤³ÌÄ¿Â¼£¨E:\webpack\webpack_test£©£» 
-2£¬³õÊ¼»¯¹¤³ÌÄ¿Â¼£ºnpm init¡£ 
-3£¬È«¾Ö°²×°webpack-cli¡£ 
+1ï¼Œåˆ›å»ºå·¥ç¨‹ç›®å½•ï¼ˆE:\webpack\webpack_testï¼‰ï¼› 
 
-?	`npm uninstall webpack-cli`
-?	`npm install -g webpack-cli`
+2ï¼Œåˆå§‹åŒ–å·¥ç¨‹ç›®å½•ï¼šnpm initã€‚ 
 
-4£¬È«¾Ö°²×°webpack¡£ 
+3ï¼Œå…¨å±€å®‰è£…webpack-cliã€‚ 
 
-?	`npm uninstall webpack`
-?	`npm install -g webpack`
+â€‹	`npm uninstall webpack-cli`
+â€‹	`npm install -g webpack-cli`
 
-5£¬webpack ¨Cmode development/production½øĞĞ´ò°ü£¬¿ÉÔÚpackage.jsonÖĞÅäÖÃdevºÍbuildµÄ½Å±¾£¬±ãÖ»ĞèÔËĞĞnpm run dev/build£¬×÷ÓÃÏàÍ¬¡£ 
-6£¬ÔÚwebpack ¨Cmode development/production¿É´®ÁªÉèÖÃÆäËû²ÎÊı¡£
+4ï¼Œå…¨å±€å®‰è£…webpackã€‚ 
 
-7£¬ÆäËû²ÎÊıÅäÖÃ
+â€‹	`npm uninstall webpack`
+â€‹	`å…¨å±€å®‰è£…ï¼šnpm install -g webpack`
 
-webpack --mode development --watch --progress --display-modules --colors --display-reasons
+â€‹	`å®‰è£…åˆ°ä½ çš„é¡¹ç›®ï¼š npm install --save-dev webpack`
+
+5ï¼Œå®‰è£…loader
+
+â€‹	å®‰è£…åˆ°ä½ çš„é¡¹ç›®ï¼šnpm install css-loader style-loader --save-dev
+
+6ï¼Œwebpack â€“mode development/productionè¿›è¡Œæ‰“åŒ…ï¼Œ
+
+â€‹	ä¹Ÿå¯åœ¨package.jsonä¸­é…ç½®devå’Œbuildçš„è„šæœ¬ï¼Œä¾¿åªéœ€è¿è¡Œnpm run dev/buildï¼Œä½œç”¨ç›¸åŒã€‚ 
+
+7ï¼Œåœ¨webpack â€“mode development/productionå¯ä¸²è”è®¾ç½®å…¶ä»–å‚æ•°ã€‚
+
+8ï¼Œå…¶ä»–å‚æ•°é…ç½®
+
+â€‹	webpack --mode development --watch --progress --display-modules --colors --display-reasons
+
+9ï¼Œä½¿ç”¨webpackæ„å»ºæœ¬åœ°æœåŠ¡å™¨
+
+â€‹	npm install --save-dev webpack-dev-server
 
 
 
-## ¶ş£¬ÊµÀıËµÃ÷
+## äºŒï¼Œå®ä¾‹è¯´æ˜
 
-1£¬´´½¨srcÎÄ¼ş¼Ğ£¬²¢´´½¨index.jsÈë¿ÚÎÄ¼ş£¨E:\webpack\webpack_test\src\index.js£©
+1ï¼Œåˆ›å»ºsrcæ–‡ä»¶å¤¹ï¼Œå¹¶åˆ›å»ºindex.jså…¥å£æ–‡ä»¶ï¼ˆE:\webpack\webpack_test\src\index.jsï¼‰
 
-2£¬ÔËĞĞÒÔÏÂÃüÁî£¬´ò°üÒÔÉÏÎÄ¼ş£¬»áÉú³É´ò°üºóµÄÎÄ¼şmain.js£¨E:\webpack\webpack_test\dist\main.js£©
+2ï¼Œè¿è¡Œä»¥ä¸‹å‘½ä»¤ï¼Œæ‰“åŒ…ä»¥ä¸Šæ–‡ä»¶ï¼Œä¼šç”Ÿæˆæ‰“åŒ…åçš„æ–‡ä»¶main.jsï¼ˆE:\webpack\webpack_test\dist\main.jsï¼‰
 
-webpack ¨Cmode development/production
+webpack â€“mode development/production
 
-3£¬´´½¨distÍ¬¼¶Ä¿Â¼web²¢ÔÚÆäÖĞ´´½¨ÎÄ¼şindex.htmlÎÄ¼ş£¨E:\webpack\webpack_test\web\index.html£©£¬ÆäÖĞÓ¦ÓÃmain,jsÎÄ¼ş£¬²¢ÓÃä¯ÀÀÆ÷µã»÷ÔËĞĞ£¬²é¿´Ò³ÃæĞ§¹û¡£
+3ï¼Œåˆ›å»ºdiståŒçº§ç›®å½•webå¹¶åœ¨å…¶ä¸­åˆ›å»ºæ–‡ä»¶index.htmlæ–‡ä»¶ï¼ˆE:\webpack\webpack_test\web\index.htmlï¼‰ï¼Œå…¶ä¸­åº”ç”¨main,jsæ–‡ä»¶ï¼Œå¹¶ç”¨æµè§ˆå™¨ç‚¹å‡»è¿è¡Œï¼ŒæŸ¥çœ‹é¡µé¢æ•ˆæœã€‚
 
-´ò°üÍê±ÏºóÖ»ÒªdistºÍwebÁ½¸öÎÄ¼ş¼ĞÄÚÈİ¼´¿ÉÊµÏÖÒ³ÃæµÄ¼´Ê±·ÃÎÊ¡£
+æ‰“åŒ…å®Œæ¯•ååªè¦distå’Œwebä¸¤ä¸ªæ–‡ä»¶å¤¹å†…å®¹å³å¯å®ç°é¡µé¢çš„å³æ—¶è®¿é—®ã€‚
 
 
 
-## Èı£¬×¢Òâ
+## ä¸‰ï¼Œæ³¨æ„
 
-1£¬`webpack4.x`ÒÔ`'./src/index.js'`×÷ÎªÈë¿Ú
+1ï¼Œ`webpack4.x`ä»¥`'./src/index.js'`ä½œä¸ºå…¥å£
 
-2£¬`webpack4.x`ÒÔºó£¬´ò°üÊ±²»Ö¸¶¨´ò°üÊä³öÎÄ¼şÃûºÍÂ·¾¶£¬»á×Ô¶¯Ä¬ÈÏÉú³Édist¼°Éú³Émain.jsÎÄ¼ş¡£ 
+2ï¼Œ`webpack4.x`ä»¥åï¼Œæ‰“åŒ…æ—¶ä¸æŒ‡å®šæ‰“åŒ…è¾“å‡ºæ–‡ä»¶åå’Œè·¯å¾„ï¼Œä¼šè‡ªåŠ¨é»˜è®¤ç”ŸæˆdiståŠç”Ÿæˆmain.jsæ–‡ä»¶ã€‚ 
 
-Ò²¿ÉÒÔÍ¨¹ıÒÔÏÂĞÎÊ½Ö¸¶¨´ò°üÂ·¾¶£¨×îºÃ±ğÓÃ£©£º
+ä¹Ÿå¯ä»¥é€šè¿‡ä»¥ä¸‹å½¢å¼æŒ‡å®šæ‰“åŒ…è·¯å¾„ï¼ˆæœ€å¥½åˆ«ç”¨ï¼‰ï¼š
 
-´ò°ü£ºnpx webpack hello.js --output-filename hello.bundle.js --output-path . --mode development 
-eg£º
+æ‰“åŒ…ï¼šnpx webpack hello.js --output-filename hello.bundle.js --output-path . --mode development 
+egï¼š
 webpack hello.js --output-filename hello.bundle.js --output-path E:\webpack\webpack_test  --mode development
 
 
 
-## ËÄ£¬Ïà¹ØÄÚÈİ£¨µ±ÎÒ²»´æÔÚ£©
+## å››ï¼Œç›¸å…³å†…å®¹
 
-1£¬°²×°node
+1ï¼Œå®‰è£…node
 node -v
 
 npm -v
 
-2£¬°²×°²¢Ê¹ÓÃwebpack
-1£©ĞÂ½¨ÎÄ¼ş¼Ğwebpack/webpack_test
-?	ÔÚ¸ÃÎÄ¼ş¼ĞÏÂÔËĞĞ npm init
-2£©ÔÚÒÔÉÏÎÄ¼ş¼ĞÏÂ°²×°webpack
-npm install webpack --save-dev
+
 
