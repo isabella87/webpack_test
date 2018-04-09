@@ -6,7 +6,7 @@
 
 1，创建工程目录（E:\webpack\webpack_test）； 
 
-2，初始化工程目录：npm init。 
+2，初始化工程目录：npm init。 (生成package.json文件，该文件也可以自行编辑，增添内容)
 
 3，全局安装webpack-cli。 
 
