@@ -1,0 +1,26 @@
+{
+  "name": "webpack_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.20.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://isabella87:760810ssg@github.com/isabella87/webpack_test.git"
+  },
+  "author": "isabella87",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isabella87/webpack_test/issues"
+  },
+  "homepage": "https://github.com/isabella87/webpack_test#readme"
+}
