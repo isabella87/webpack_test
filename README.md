@@ -3,6 +3,7 @@
 
 
 ## 一，环境配置
+前奏：安装nodejs
 
 1，创建工程目录（E:\webpack\webpack_test）； 
 
